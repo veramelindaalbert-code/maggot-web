@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maggot-web-kz5o.vercel.app/sitemap.xml
