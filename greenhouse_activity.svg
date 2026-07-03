@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#E9F5ED"/>
+  <circle cx="50" cy="50" r="150" fill="#D8F3DC" opacity="0.6"/>
+  <circle cx="550" cy="400" r="200" fill="#D8F3DC" opacity="0.6"/>
+
+  <g transform="translate(150, 70)">
+    <path d="M150,20 C220,20 280,70 280,140 C280,240 150,320 150,320 C150,320 20,240 20,140 C20,70 80,20 150,20 Z" fill="none" stroke="#2D6A4F" stroke-width="6" stroke-dasharray="10 5"/>
+    <path d="M150,260 L150,110" stroke="#1B4332" stroke-width="8" stroke-linecap="round"/>
+    <path d="M150,170 Q100,150 90,110 Q140,110 150,145 Z" fill="#52B788" stroke="#1B4332" stroke-width="3"/>
+    <path d="M150,140 Q200,120 210,80 Q160,80 150,115 Z" fill="#74C69D" stroke="#1B4332" stroke-width="3"/>
+    <path d="M70,230 Q110,240 130,225" fill="none" stroke="#2D6A4F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M230,230 Q190,240 170,225" fill="none" stroke="#2D6A4F" stroke-width="4" stroke-linecap="round"/>
+    
+    <text x="150" y="360" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#1B4332" text-anchor="middle">PEMILAHAN SAMPAH</text>
+    <text x="150" y="385" font-family="'Outfit', sans-serif" font-weight="500" font-size="16" fill="#40916C" text-anchor="middle">Sinergi Komunitas &amp; Lingkungan</text>
+  </g>
+</svg>

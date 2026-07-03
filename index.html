@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Hijau Lestari - Proyek Sosial Budidaya Maggot BSF</title>
+  <!-- Google Fonts Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="nav-logo-icon">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+      <span>Rumah Hijau Lestari</span>
+    </div>
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active" data-target="home"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#budidaya" class="nav-link" data-target="budidaya"><i class="fa-solid fa-bug"></i> Budidaya & Manfaat</a></li>
+      <li><a href="#dokumentasi" class="nav-link" data-target="dokumentasi"><i class="fa-solid fa-images"></i> Dokumentasi & Review</a></li>
+      <li><a href="#kontak" class="nav-link" data-target="kontak"><i class="fa-solid fa-envelope"></i> Kontak & FAQ</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Menu navigasi">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main>
+
+    <!-- ========================================== -->
+    <!-- HALAMAN 1: HOME & PROFIL                   -->
+    <!-- ========================================== -->
+    <section id="home" class="page-section active">
+      <div class="container">
+        
+        <!-- Hero Section -->
+        <div class="hero">
+          <div class="hero-content">
+            <span class="section-label">Greenhouse Social Project</span>
+            <h1>Mengubah Sampah Organik Menjadi <span>Keberkahan</span></h1>
+            <p>Rumah Hijau Lestari adalah inisiatif sosial berbasis komunitas yang fokus pada pemulihan lingkungan secara kreatif melaui budidaya maggot BSF (Black Soldier Fly). Kami berkomitmen mewujudkan kemandirian pakan ternak dan lingkungan bebas sampah organik.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" onclick="switchPage('budidaya')">Pelajari Budidaya <i class="fa-solid fa-arrow-right"></i></button>
+              <button class="btn btn-outline" onclick="switchPage('kontak')">Hubungi Kami</button>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="assets/hero_greenhouse.png" alt="Rumah Hijau Lestari Greenhouse" class="hero-image" id="hero-img">
+            <div class="hero-badge">
+              <span class="hero-badge-icon">🌿</span>
+              <span class="hero-badge-text">100% Organik & Ramah Lingkungan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Environmental Impact Counter -->
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-label">Dampak Nyata</span>
+          <h2 class="section-title">Kontribusi Sosial & Lingkungan Kami</h2>
+          <p class="section-subtitle">Berikut adalah catatan dampak positif yang berhasil dikumpulkan bersama masyarakat sekitar.</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="card stat-card">
+            <span class="stat-num" id="stat-waste">5.8</span>
+            <span class="stat-desc">Ton Sampah Organik Terurai</span>
+          </div>
+          <div class="card stat-card">
+            <span class="stat-num" id="stat-feed">3.2</span>
+            <span class="stat-desc">Ton Pakan Ternak Dihasilkan</span>
+          </div>
+          <div class="card stat-card">
+            <span class="stat-num" id="stat-kasgot">2.4</span>
+            <span class="stat-desc">Ton Pupuk Kasgot Terdistribusi</span>
+          </div>
+          <div class="card stat-card">
+            <span class="stat-num" id="stat-partners">150+</span>
+            <span class="stat-desc">Mitra Peternak & Warga Terbantu</span>
+          </div>
+        </div>
+
+        <!-- Vision and Core Values Info -->
+        <div class="intro-grid">
+          <div class="intro-image" style="border-radius: var(--border-radius-lg); overflow: hidden; box-shadow: var(--card-shadow); height: 350px;">
+            <img src="assets/greenhouse_activity.png" alt="Aktivitas Rumah Hijau" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="intro-content">
+            <h3>Visi & Misi Kami</h3>
+            <p>Menciptakan ekosistem perkotaan yang berkelanjutan dengan mempertemukan teknologi pengolahan sampah berbasis hayati dan pemberdayaan ekonomi masyarakat bawah.</p>
+            
+            <div class="values-list">
+              <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="value-text">
+                  <h4>Sirkular Ekonomi</h4>
+                  <p>Mengambil sisa dapur, menyulapnya menjadi sumber protein bernilai tinggi (maggot) dan sisa kasgot untuk menyuburkan tanaman.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="value-text">
+                  <h4>Pemberdayaan Masyarakat</h4>
+                  <p>Melatih warga sekitar dan peternak lokal agar bisa mandiri memproduksi pakan ternak berkualitas tinggi secara gratis atau murah.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="value-text">
+                  <h4>Edukasi Lingkungan</h4>
+                  <p>Membuka pintu Rumah Hijau bagi pelajar, mahasiswa, dan komunitas untuk belajar tentang pengolahan limbah ramah lingkungan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- HALAMAN 2: BUDIDAYA & MANFAAT              -->
+    <!-- ========================================== -->
+    <section id="budidaya" class="page-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Panduan & Edukasi</span>
+          <h2 class="section-title">Panduan Budidaya & Manfaat Maggot</h2>
+          <p class="section-subtitle">Di bawah ini Anda dapat mempelajari langkah-langkah praktis budidaya maggot BSF beserta manfaat besarnya bagi kelangsungan ekologi.</p>
+        </div>
+
+        <!-- Sub Tabs Nav inside Budidaya -->
+        <div class="tabs-container">
+          <button class="sub-tab active" data-tab="tab-cara-budidaya"><i class="fa-solid fa-book-open"></i> Cara Budidaya Maggot</button>
+          <button class="sub-tab" data-tab="tab-manfaat"><i class="fa-solid fa-circle-check"></i> Fungsi & Manfaat</button>
+        </div>
+
+        <!-- TAB CONTENT 1: CARA BUDIDAYA -->
+        <div id="tab-cara-budidaya" class="tab-pane active">
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-dot">1</div>
+              <div class="card timeline-card">
+                <div class="timeline-title">
+                  <h3>Fase Penetasan Telur BSF</h3>
+                  <span class="timeline-duration">Durasi: 3 - 4 Hari</span>
+                </div>
+                <div class="timeline-content">
+                  <p>Telur lalat BSF diletakkan di atas media penetasan khusus (biasanya dedak yang dibasahi atau ampas tahu) di dalam wadah baki. Suhu ideal dijaga sekitar 28-35°C agar penetasan maksimal.</p>
+                  <div class="timeline-tips">
+                    <span>💡 Tips Penting:</span>
+                    <p>Jangan biarkan telur terkena basah langsung dari media air. Gunakan sekat ram kawat untuk menaruh telur di atas media pakan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot">2</div>
+              <div class="card timeline-card">
+                <div class="timeline-title">
+                  <h3>Fase Pembesaran Larva (Mini Larva)</h3>
+                  <span class="timeline-duration">Durasi: 12 - 15 Hari</span>
+                </div>
+                <div class="timeline-content">
+                  <p>Setelah menetas, bayi larva dipindahkan ke wadah biopon pembesaran. Berikan pakan berupa limbah sayuran atau sisa makanan dapur yang sudah dicacah/dihaluskan agar mudah dicerna.</p>
+                  <div class="timeline-tips">
+                    <span>💡 Tips Penting:</span>
+                    <p>Jaga kelembapan biopon. Pakan yang terlalu basah dapat menimbulkan bau menyengat dan memicu larva kabur dari wadah.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot">3</div>
+              <div class="card timeline-card">
+                <div class="timeline-title">
+                  <h3>Fase Panen Maggot & Pengumpulan Kasgot</h3>
+                  <span class="timeline-duration">Durasi: Hari ke-18 s.d 21</span>
+                </div>
+                <div class="timeline-content">
+                  <p>Pada usia ini, larva berukuran optimal dan kaya akan lipid/protein. Maggot dipanen dengan cara diayak untuk memisahkannya dari kasgot (bekas cacing/sisa pakan kering). Maggot siap diberikan langsung ke ikan atau unggas.</p>
+                  <div class="timeline-tips">
+                    <span>💡 Tips Penting:</span>
+                    <p>Kasgot berwarna cokelat kehitaman yang tersisa merupakan pupuk organik berkualitas tinggi yang sangat bagus untuk tanaman hias dan sayuran.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot">4</div>
+              <div class="card timeline-card">
+                <div class="timeline-title">
+                  <h3>Fase Pupa & Regenerasi Lalat BSF</h3>
+                  <span class="timeline-duration">Durasi: 14 - 20 Hari</span>
+                </div>
+                <div class="timeline-content">
+                  <p>Sebagian maggot disisihkan dan dibiarkan memasuki fase prepupa (berubah warna menjadi hitam dan berhenti makan). Prepupa akan merayap ke luar biopon menuju wadah pupa gelap untuk bermetamorfosis menjadi lalat dewasa siap kawin di dalam kandang lalat.</p>
+                  <div class="timeline-tips">
+                    <span>💡 Tips Penting:</span>
+                    <p>Kandang lalat harus terkena sinar matahari pagi langsung agar merangsang lalat dewasa melakukan perkawinan dan menghasilkan telur baru.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TAB CONTENT 2: FUNGSI DAN MANFAAT -->
+        <div id="tab-manfaat" class="tab-pane">
+          <div class="benefits-grid">
+            
+            <div class="card benefit-card">
+              <div class="benefit-icon"><i class="fa-solid fa-trash-arrow-up"></i></div>
+              <h3>Pengurai Sampah Organik Tercepat</h3>
+              <p>Maggot BSF merupakan salah satu organisme pengurai organik paling efisien di dunia. Mereka dapat mengonsumsi sampah organik hingga 2 kali berat tubuhnya setiap hari. Mengurangi penimbunan limbah organik di TPA secara signifikan.</p>
+            </div>
+
+            <div class="card benefit-card">
+              <div class="benefit-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+              <h3>Pakan Ternak Berprotein Tinggi (40-45%)</h3>
+              <p>Mengandung asam amino, asam laurat, dan protein kasar yang sangat melimpah. Sangat baik untuk pakan ikan lele, nila, ayam, bebek, dan burung kicau. Membantu menekan biaya pembelian pakan pabrikan hingga 50% bagi peternak mandiri.</p>
+            </div>
+
+            <div class="card benefit-card">
+              <div class="benefit-icon"><i class="fa-solid fa-seedling"></i></div>
+              <h3>Pupuk Kasgot untuk Pertanian</h3>
+              <p>Sisa pakan yang diolah maggot terkonversi menjadi kasgot (bekas maggot) berkadar hara tinggi. Kasgot ini berstruktur gembur, bebas patogen merugikan, dan ramah lingkungan untuk menggantikan pupuk kimia sintetis.</p>
+            </div>
+
+            <div class="card benefit-card">
+              <div class="benefit-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <h3>Potensi Bisnis dan Ekosistem Mandiri</h3>
+              <p>Memiliki tingkat permintaan pasar yang tinggi terhadap telur BSF, maggot basah, maggot kering, serta pupuk kasgot. Menghasilkan pemasukan tambahan bagi masyarakat pengelola sekaligus berkontribusi menjaga kelestarian bumi.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- HALAMAN 3: DOKUMENTASI & REVIEW            -->
+    <!-- ========================================== -->
+    <section id="dokumentasi" class="page-section">
+      <div class="container">
+        
+        <!-- Documentation Gallery -->
+        <div class="doc-section">
+          <div class="section-header">
+            <span class="section-label">Dokumentasi Kegiatan</span>
+            <h2 class="section-title">Album & Hasil Uji Coba Rumah Hijau</h2>
+            <p class="section-subtitle">Simak potret kegiatan sehari-hari di Rumah Hijau Lestari beserta hasil uji coba pembuktian pemanfaatan Maggot BSF.</p>
+          </div>
+
+          <div class="gallery-grid">
+            
+            <div class="gallery-item">
+              <img src="assets/greenhouse_building.png" alt="Bangunan Greenhouse Rumah Hijau">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Fasilitas</span>
+                <span class="gallery-title">Area Kandang & Biopon Utama</span>
+                <span class="gallery-desc">Penataan tempat budidaya bersih dan bebas bau menyengat.</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="assets/maggot_harvest.png" alt="Panen Maggot BSF">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Aktivitas</span>
+                <span class="gallery-title">Panen Maggot Basah</span>
+                <span class="gallery-desc">Hasil panen melimpah siap didistribusikan ke peternak mitra.</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="assets/social_workshop.png" alt="Pelatihan Masyarakat">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Sosialisasi</span>
+                <span class="gallery-title">Pelatihan Warga Sekitar</span>
+                <span class="gallery-desc">Workshop cara memilah sampah dapur untuk pakan maggot.</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="assets/trial_fish.png" alt="Uji Coba Pakan Ikan">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Uji Coba</span>
+                <span class="gallery-title">Uji Coba Pakan Ikan Nila</span>
+                <span class="gallery-desc">Pertumbuhan ikan naik 35% dibandingkan pakan pellet biasa.</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="assets/trial_fertilizer.png" alt="Tanaman dengan Kasgot">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Uji Coba</span>
+                <span class="gallery-title">Uji Kasgot Pada Tanaman Cabai</span>
+                <span class="gallery-desc">Tanaman cabai tumbuh lebih lebat dan subur tanpa pupuk kimia.</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="assets/bsf_eggs.png" alt="Pengumpulan Telur BSF">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Budidaya</span>
+                <span class="gallery-title">Pengumpulan Telur BSF Baru</span>
+                <span class="gallery-desc">Proses ekstraksi berkala dari blok kayu pemancingan lalat.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Customer/Visitor Reviews Slider -->
+        <div class="reviews-section">
+          <div class="section-header" style="margin-bottom: 2.5rem;">
+            <span class="section-label">Ulasan Pengunjung</span>
+            <h2 class="section-title">Apa Kata Mereka?</h2>
+            <p class="section-subtitle">Ulasan jujur dari pengunjung, peternak, dan akademisi yang telah berkolaborasi dalam uji coba budidaya di Rumah Hijau Lestari.</p>
+          </div>
+
+          <!-- Testimonial Slider Container -->
+          <div class="testimonial-container">
+            
+            <div class="testimonial-slide active">
+              <img src="assets/avatar1.svg" alt="Avatar Budi Santoso" class="testimonial-avatar">
+              <div class="testimonial-stars" style="color:var(--accent-color); margin-bottom: 0.6rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Sangat terbantu! Dulu biaya pakan lele saya mencekik kantong. Setelah diajari pakan komplementer maggot dari Rumah Hijau, pengeluaran hemat sampai 40% dan lele tumbuh sangat lincah."</p>
+              <span class="testimonial-author">Pak Budi Santoso</span>
+              <span class="testimonial-role">Peternak Lele Mandiri</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <img src="assets/avatar2.svg" alt="Avatar Sarah" class="testimonial-avatar">
+              <div class="testimonial-stars" style="color:var(--accent-color); margin-bottom: 0.6rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p class="testimonial-text">"Mengunjungi Rumah Hijau bersama murid-murid sekolah kami memberikan wawasan luar biasa tentang biokonversi limbah. Tempatnya tertata rapi, tidak bau, dan fasilitatornya ramah."</p>
+              <span class="testimonial-author">Ibu Sarah K.</span>
+              <span class="testimonial-role">Guru Biologi SMA N 3</span>
+            </div>
+
+            <div class="testimonial-slide">
+              <img src="assets/avatar3.svg" alt="Avatar Dr. Handoko" class="testimonial-avatar">
+              <div class="testimonial-stars" style="color:var(--accent-color); margin-bottom: 0.6rem;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Uji laboratorium kami membuktikan bahwa kasgot dari olahan Rumah Hijau Lestari memiliki kandungan nitrogen larut tinggi yang unggul untuk pemulihan tanah kritis di perkotaan."</p>
+              <span class="testimonial-author">Dr. Ir. Handoko M.Si.</span>
+              <span class="testimonial-role">Dosen Ilmu Tanah Universitas</span>
+            </div>
+
+          </div>
+
+          <!-- Controls for Slider -->
+          <div class="slider-controls">
+            <button class="slider-btn" id="prev-review-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="slider-dots" id="slider-dots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="slider-btn" id="next-review-btn"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- HALAMAN 4: KONTAK & FAQ                    -->
+    <!-- ========================================== -->
+    <section id="kontak" class="page-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Hubungi Kami / Hubungan Publik</span>
+          <h2 class="section-title">Konsultasi, Kunjungan & Pertanyaan</h2>
+          <p class="section-subtitle">Temukan jawaban yang sering diajukan di FAQ kami, atau kirimkan pesan langsung jika Anda memiliki rencana kunjungan atau kerja sama.</p>
+        </div>
+
+        <div class="faq-contact-grid">
+          
+          <!-- Accordion FAQ -->
+          <div>
+            <h3 style="font-size: 1.6rem; color: var(--primary-color); margin-bottom:1.5rem; font-weight:700;"><i class="fa-solid fa-circle-question"></i> Pertanyaan Umum (FAQ)</h3>
+            <div class="faq-container">
+              
+              <div class="faq-item active">
+                <div class="faq-question">
+                  <span>Apakah tempat budidaya maggot BSF berbau menyengat?</span>
+                  <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Tidak, jika dikelola dengan benar. Lalat BSF tidak memiliki mulut penggigit dan hanya meminum air di alam bebas, sehingga bukan pembawa vektor penyakit. Selama kelembapan pakan diatur dengan baik (tidak tergenang air), biopon maggot tidak akan berbau menyengat dan mengundang lalat hijau pemakan bangkai.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>Apa makanan terbaik untuk mempercepat tumbuh kembang maggot?</span>
+                  <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Bahan pakan berkadar air sedang yang kaya nutrisi seperti sisa melon, nasi sisa dapur, ampas tahu, buah pepaya busuk, maupun limbah sayur bertekstur lunak. Hindari memberikan limbah berserat kasar keras seperti kulit jeruk tebal, kayu, atau tulang hewan keras.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>Bagaimana cara warga mendapatkan maggot gratis untuk pakan ternak?</span>
+                  <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kami menjalankan program barter limbah organik. Warga dapat menyetorkan sampah dapur organik yang terpilah seberat 5 kg untuk ditukarkan dengan 1 kg maggot hidup siap saji, atau membelinya secara murah jika tidak menyetor sampah.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>Apakah Rumah Hijau menerima kunjungan rombongan studi?</span>
+                  <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Tentu saja. Kami sangat menyambut rombongan sekolah, universitas, maupun ibu-ibu PKK. Silakan isi formulir di samping untuk mengajukan jadwal/reservasi tanggal kunjungan sekurangnya seminggu sebelumnya.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Info and Form -->
+          <div class="contact-container">
+            
+            <div class="card contact-card">
+              <h3 style="font-size: 1.4rem; color: var(--primary-color); margin-bottom: 0.8rem; font-weight:700;"><i class="fa-solid fa-address-card"></i> Hubungi Kami</h3>
+              <p style="color:var(--medium-text); font-size: 0.95rem;">Jangan ragu untuk berkunjung langsung ke fasilitas kami.</p>
+              
+              <div class="contact-info-list">
+                <div class="contact-info-item">
+                  <div class="contact-info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                  <div class="contact-info-text">
+                    <h4>WhatsApp Hubungan Komunitas</h4>
+                    <p>+62 812-3456-7890 (Pengurus Rumah Hijau)</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="contact-info-text">
+                    <h4>Email Resmi Yayasan</h4>
+                    <p>info@rumahhijaulestari.org</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="contact-info-text">
+                    <h4>Alamat Rumah Hijau</h4>
+                    <p>Jl. Hijau Lestari Raya No. 45, Kecamatan Sukamaju, Kota Hijau</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Mock Map -->
+              <div class="mock-map">
+                <div class="mock-map-bg">
+                  <div class="mock-map-pulse"></div>
+                  <div class="mock-map-marker"><i class="fa-solid fa-location-dot"></i></div>
+                  <span style="position:absolute; bottom:15px; font-weight:700; font-size:0.8rem; color:var(--primary-color);">Rumah Hijau Lestari Center</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Form Kontak Cepat -->
+            <div class="card form-card">
+              <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan Cepat</h3>
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="form-name">Nama Lengkap</label>
+                  <input type="text" id="form-name" class="form-control" placeholder="Nama Anda..." required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Alamat Email</label>
+                  <input type="email" id="form-email" class="form-control" placeholder="nama@email.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-message">Pesan / Jenis Pertanyaan</label>
+                  <textarea id="form-message" class="form-control" placeholder="Tuliskan detail pertanyaan atau keperluan kunjungan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SUCCESS/MESSAGE TOAST -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="font-size: 1.5rem;"></i>
+    <div class="toast-content">
+      <h4 style="font-weight: 700;">Berhasil Terkirim!</h4>
+      <p style="font-size: 0.85rem; color: #E9F5ED;">Pesan Anda telah diterima oleh Pengurus Rumah Hijau.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3><i class="fa-solid fa-leaf"></i> Rumah Hijau Lestari</h3>
+        <p>Proyek sosial berbasis lingkungan hidup untuk mengurangi bobot limbah organik dengan memanfaatkan daya urai maggot Hermetia illucens (BSF).</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Menu Cepat</h4>
+        <ul class="footer-links">
+          <li><a href="#home" onclick="switchPage('home')">Home / Profil</a></li>
+          <li><a href="#budidaya" onclick="switchPage('budidaya')">Cara Budidaya</a></li>
+          <li><a href="#budidaya" onclick="switchPage('budidaya')">Fungsi & Manfaat</a></li>
+          <li><a href="#dokumentasi" onclick="switchPage('dokumentasi')">Dokumentasi & Uji Coba</a></li>
+          <li><a href="#kontak" onclick="switchPage('kontak')">Kontak & FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Jam Operasional Kegiatan</h4>
+        <p>Terbuka untuk umum pada jadwal berikut:</p>
+        <ul class="footer-links" style="color: #C7DFD3; font-size: 0.95rem;">
+          <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-clock"></i> <strong>Senin - Jumat:</strong> 08.00 - 15.00 WIB</li>
+          <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-clock"></i> <strong>Sabtu (Workshop Warga):</strong> 09.00 - 12.00 WIB</li>
+          <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-calendar-xmark"></i> <strong>Minggu & Hari Libur:</strong> Tutup</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rumah Hijau Lestari Social Project. Dilindungi Undang-Undang.</p>
+    </div>
+  </footer>
+
+  <!-- Main Logic JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
